@@ -1,17 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { css } from './stitches.config';
+
+css.global({
+  html: {
+    height: '100%',
+  },
+  body: {
+    height: '100%',
+    color: '$text',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+    webkitFontSmoothing: 'antialiased',
+    fontSize: '16px',
+    fontWeight: 300,
+    textSizeAdjust: 'none',
+  },
+  '#root': {
+    minHeight: '100%',
+    backgroundColor: '$pageBackground',
+  },
+  'body, div, span, a, p, h1, h2, code': {
+    margin: 0,
+    border: 0,
+    padding: 0,
+    boxSizing: 'inherit',
+    font: 'inherit',
+    fontWeight: 'inherit',
+    textDecoration: 'inherit',
+    textAlign: 'inherit',
+    color: 'inherit',
+    background: 'transparent',
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
