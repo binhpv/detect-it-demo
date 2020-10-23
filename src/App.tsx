@@ -7,7 +7,7 @@ import {
   supportsPassiveEvents,
 } from 'detect-it';
 import useDarkMode from 'use-dark-mode';
-import { styled, darkThemeClass } from './stitches.config';
+import { styled, globalStyles, darkThemeClass } from './stitches.config';
 import { StyledInteractiveLink, StyledDarkModeToggle } from './Interactive';
 
 const AppDiv = styled('div', {
@@ -71,6 +71,8 @@ const BooleanResult: React.FC<BooleanResultProps> = ({ bool }) => (
 );
 
 const App = () => {
+  globalStyles();
+
   const darkMode = useDarkMode(undefined, {
     classNameDark: darkThemeClass,
   });

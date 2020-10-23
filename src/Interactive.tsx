@@ -99,6 +99,7 @@ const InteractiveLink: React.VFC<InteractiveLinkProps> = (props) => {
 export const StyledInteractiveLink = styled(InteractiveLink, {
   color: '$textLowContrast',
   borderBottom: '1px dotted $green',
+  textDecoration: 'none',
 
   '&.hover': {
     color: '$text',
