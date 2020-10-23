@@ -77,7 +77,7 @@ const App = () => {
   return (
     <AppDiv>
       <H1>
-        <span>Detect It &#8211; Live Detection Test</span>
+        <span>Detect It &#8211; Live Detection</span>
         <StyledDarkModeToggle onClick={darkMode.toggle} />
       </H1>
       <StyledInteractiveLink href="https://github.com/rafgraph/detect-it">
