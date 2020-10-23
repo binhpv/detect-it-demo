@@ -30,6 +30,18 @@ export const darkThemeClass = css.theme({
 });
 
 export const globalStyles = css.global({
+  'body, div, span, a, p, h1, h2, code': {
+    margin: 0,
+    border: 0,
+    padding: 0,
+    boxSizing: 'inherit',
+    font: 'inherit',
+    fontWeight: 'inherit',
+    textDecoration: 'inherit',
+    textAlign: 'inherit',
+    color: 'inherit',
+    background: 'transparent',
+  },
   html: {
     height: '100%',
   },
@@ -46,17 +58,5 @@ export const globalStyles = css.global({
   '#root': {
     minHeight: '100%',
     backgroundColor: '$pageBackground',
-  },
-  'body, div, span, a, p, h1, h2, code': {
-    margin: 0,
-    border: 0,
-    padding: 0,
-    boxSizing: 'inherit',
-    font: 'inherit',
-    fontWeight: 'inherit',
-    textDecoration: 'inherit',
-    textAlign: 'inherit',
-    color: 'inherit',
-    background: 'transparent',
   },
 });
