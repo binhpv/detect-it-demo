@@ -67,7 +67,7 @@ interface BooleanResultProps {
   bool: boolean;
 }
 const BooleanResult: React.FC<BooleanResultProps> = ({ bool }) => (
-  <Result bool={bool ? 'true' : 'false'}>{`${bool}`}</Result>
+  <Result bool={bool}>{`${bool}`}</Result>
 );
 
 const App = () => {
@@ -76,6 +76,7 @@ const App = () => {
   const darkMode = useDarkMode(undefined, {
     classNameDark: darkThemeClass,
   });
+
   return (
     <AppDiv>
       <H1>
