@@ -27,22 +27,12 @@ const H2 = styled('h2', {
   fontSize: '22px',
 });
 
-const CodeOuterBlock = styled('div', {
+const CodeBlock = styled('div', {
   backgroundColor: '$codeBlockBackground',
-  padding: '1px 5px',
+  padding: '4px 16px 6px',
   borderRadius: '3px',
   margin: '16px 0',
 });
-
-const CodeInnerBlock = styled('div', {
-  margin: '8px 11px 10px',
-});
-
-const CodeBlock: React.FC = (props) => (
-  <CodeOuterBlock>
-    <CodeInnerBlock>{props.children}</CodeInnerBlock>
-  </CodeOuterBlock>
-);
 
 const Code = styled('code', {
   display: 'block',
