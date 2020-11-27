@@ -60,7 +60,7 @@ const BooleanResult: React.FC<BooleanResultProps> = ({ bool }) => (
   <Result bool={bool}>{`${bool}`}</Result>
 );
 
-const App = () => {
+export const App = () => {
   globalStyles();
 
   const darkMode = useDarkMode(undefined, {
@@ -185,5 +185,3 @@ const App = () => {
     </AppDiv>
   );
 };
-
-export default App;
