@@ -34,7 +34,7 @@ const DarkModeToggle: React.VFC<DarkModeToggleProps> = ({
 };
 
 export const StyledDarkModeToggle = styled(DarkModeToggle, {
-  color: '$text',
+  color: '$highContrast',
   width: '30px',
   height: '30px',
   display: 'inline-block',
@@ -80,13 +80,13 @@ const InteractiveLink: React.VFC<InteractiveLinkProps> = (props) => {
 };
 
 export const StyledInteractiveLink = styled(InteractiveLink, {
-  color: '$textLowContrast',
+  color: '$lowContrast',
   borderBottom: '1px dotted $green',
   textDecoration: 'none',
 
   '&.hover': {
-    color: '$text',
-    borderBottom: '1px solid $green',
+    color: '$highContrast',
+    borderBottomStyle: 'solid',
   },
 
   '&.focusFromTab': {

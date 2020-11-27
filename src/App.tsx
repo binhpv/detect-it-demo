@@ -19,6 +19,7 @@ const H1 = styled('h1', {
   fontSize: '26px',
   display: 'flex',
   justifyContent: 'space-between',
+  marginBottom: '2px',
 });
 
 const H2 = styled('h2', {
