@@ -1,4 +1,3 @@
-import React from 'react';
 import Interactive from 'react-interactive';
 import { SunIcon } from '@modulz/radix-icons';
 import { styled } from './stitches.config';

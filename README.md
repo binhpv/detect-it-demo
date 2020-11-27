@@ -1,5 +1,3 @@
-# Detect It Demo App
+# Demo App for [`detect-it`](https://github.com/rafgraph/detect-it)
 
-Live detection test for `detect-it`: https://detect-it.rafgraph.dev
-
-`detect-it` repository: https://github.com/rafgraph/detect-it
+Live demo app: https://detect-it.rafgraph.dev
