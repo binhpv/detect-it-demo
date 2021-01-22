@@ -1,10 +1,5 @@
-import { StrictMode } from 'react';
-import ReactDOM from 'react-dom';
-import { App } from './App';
-
-ReactDOM.render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  document.getElementById('root'),
-);
+import 'react-app-polyfill/ie11';
+import 'proxy-polyfill';
+import 'core-js/features/array';
+import 'core-js/features/string';
+import './bootstrap';
